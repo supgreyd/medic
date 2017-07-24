@@ -1,0 +1,25 @@
+.paralax
+  position: relative
+  background: url(../img/13.jpg) center center no-repeat fixed
+  background-size: cover
+  min-height: 100%
+  padding: 125px 0
+  text-align: center
+  z-index: 1
+
+  &:before
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    content: ''
+    background: linear-gradient(90deg, rgba(28, 123, 172, 0.93) 0%, rgba(19, 177, 205, 0.93) 100%)
+    z-index: -1
+
+  h1
+    @extend %title_promo
+    margin-bottom: 80px
+
+  a
+    @extend %button

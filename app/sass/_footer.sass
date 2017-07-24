@@ -1,0 +1,37 @@
+.footer
+  background-color: $c-title
+
+  a
+    @extend %text
+    color: $c-banner-opacity
+    margin-bottom: 0
+
+    &:hover
+      color: $c-main
+
+  li
+    padding: 5px 0
+
+  h2
+    @extend %title_small
+    color: $c-banner
+
+  p
+    @extend %text
+    color: $c-banner-opacity
+    
+  .col-md-4
+    position: relative
+    z-index: 1
+    
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      background: url(../img/worldmap.png) no-repeat center center
+      background-size: cover
+      width: 70%
+      z-index: -1

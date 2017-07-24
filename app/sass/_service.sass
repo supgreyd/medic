@@ -1,0 +1,54 @@
+.block__img
+  display: block
+  height: 100%
+  max-height: 375px
+
+  img
+    margin-bottom: 10px
+
+.block__img_mid,
+.block__img_small
+  height: 100%
+  max-height: 182px
+  &.block__img_mid
+    max-height: 374px
+
+.block__service
+  h2
+    @extend %title_mid
+    margin-bottom: 15px
+
+  span
+    @extend  %title_large
+
+  p
+    @extend %text
+
+  ul
+    margin-top: 30px
+    margin-left: 9px
+
+  li
+    position: relative
+    @extend %list
+
+    &:before
+      content: ''
+      background-color: $c-main
+      position: absolute
+      height: 1px
+      width: 8px
+      left: -25px
+      top: 19px
+      transform: rotate(45deg)
+
+    &:after
+      content: ''
+      background-color: $c-main
+      position: absolute
+      height: 1px
+      width: 15px
+      left: -20px
+      top: 17px
+      transform: rotate(-45deg)
+

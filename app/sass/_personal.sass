@@ -1,0 +1,27 @@
+.personal
+  text-align: center
+
+  article
+    padding: 40px 0
+
+  p
+    @extend %title_mid
+
+  h1
+    @extend %title_large
+
+  .personal__namee
+    @extend %title_small
+    margin-bottom: 5px
+
+  .personal__post
+    @extend %text
+    font-style: italic
+
+  a
+    position: relative
+    display: inline-block
+
+    &:hover
+      box-shadow: 0 0 20px 5px rgba(34, 35, 36, 0.07)
+      z-index: 1

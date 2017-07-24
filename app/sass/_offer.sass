@@ -1,0 +1,31 @@
+
+.offer
+  border-bottom: 1px solid #f5f8f9
+
+  svg
+    position: absolute
+    height: 60px
+    width: 60px
+
+  li
+    margin-bottom: 70px
+
+    &:last-child
+      margin-bottom: 0
+
+    article
+      display: inline-block
+      vertical-align: top
+      margin-left: 80px
+
+.block__offer
+  h3
+    @extend %title_small
+
+  p
+    @extend %text
+    margin-bottom: 0
+
+@media (max-width: 992px)
+  .offer li:last-child
+    margin-bottom: 70px

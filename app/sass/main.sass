@@ -1,0 +1,85 @@
+@import "variables"
+@import "slider"
+@import "service"
+@import "process"
+@import "offer"
+@import "personal"
+@import "paralax"
+@import "news"
+@import "contact"
+@import "footer"
+
+
+html
+	font-family: 'Montserrat', sans-serif
+
+.g__col_5
+	padding: 0 5px
+
+.g__col_0
+	padding: 0
+
+.g__padding_80
+	padding-top: 80px
+	padding-bottom: 80px
+
+*
+	transition: .3s
+
+
+.my-dots
+	position: absolute
+	bottom: -80px
+	display: block
+	width: 100%
+	padding: 0
+	list-style: none
+	text-align: center
+
+
+	li
+		position: relative
+		display: inline-block
+		width: 20px
+		height: 20px
+		margin: 0 5px
+		padding: 0
+		cursor: pointer
+
+		button
+			font-size: 0
+			line-height: 0
+			display: inline-block
+			width: 20px
+			height: 20px
+			padding: 5px
+			cursor: pointer
+			color: transparent
+			border: 0
+			outline: none
+			background: transparent
+
+			&:before
+				font-family: 'slick'
+				font-size: 6px
+				line-height: 20px
+				position: absolute
+				top: 0
+				left: 0
+				width: 20px
+				height: 9px
+				border-radius: 15px
+				background-color: #acacac
+				content: ''
+				-webkit-font-smoothing: antialiased
+				-moz-osx-font-smoothing: grayscale
+
+	.slick-active button:before
+		background-color: $c-main
+
+.slick__slider
+	.my-dots
+		bottom: 0
+		margin-bottom: 30px
+
+
