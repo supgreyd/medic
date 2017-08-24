@@ -2,7 +2,6 @@
   background: linear-gradient(145deg, rgba(19, 177, 205, 0.6) 0%, #13b1cd 100%)
   text-align: center
 
-
   h2
     @extend %title_mid
     color: $c-banner-opacity
@@ -21,34 +20,43 @@
       background-color: transparent
       color: $c-banner
 
-.block__process
-  &:after
-    display: inline-block
-    position: absolute
-    top: 50px
-    content: ''
-    height: 1px
-    width: 100%
-    background-color: rgba(255, 255, 255, 0.2)
+  .block__process
+    &:after
+      display: inline-block
+      position: absolute
+      top: 50px
+      content: ''
+      height: 1px
+      width: 100%
+      background-color: rgba(255, 255, 255, 0.2)
 
-  div
-    background-color: $c-banner
-    border-radius: 50%
-    font-size: 38px
-    font-weight: 300
-    color: $c-main
-    line-height: 100px
-    display: inline-block
-    height: 100px
-    width: 100px
-    box-shadow: rgba(34,35,36,0.2) 0 5px 16px 0
-    margin-bottom: 30px
+    @media(max-width: 992px)
+      &:after
+        display: none
 
-  h3
-    @extend %title_small
-    color: $c-banner
 
-  p
-    @extend %text
-    color: $c-banner-opacity
+
+    div
+      background-color: $c-banner
+      border-radius: 50%
+      font-size: 38px
+      font-weight: 300
+      color: $c-main
+      line-height: 100px
+      display: inline-block
+      height: 100px
+      width: 100px
+      box-shadow: rgba(34,35,36,0.2) 0 5px 16px 0
+      margin-bottom: 30px
+
+    h3
+      @extend %title_small
+      color: $c-banner
+
+    p
+      @extend %text
+      color: $c-banner-opacity
+
+  li:last-child .block__process:after
+    display: none
 
